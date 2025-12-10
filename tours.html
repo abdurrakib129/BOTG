@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother On The Globe - Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/Images/logo.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="botg-loader">
+                <span class="loader-letter loader-b">B</span>
+                <span class="loader-letter loader-o">O</span>
+                <span class="loader-letter loader-t">T</span>
+                <span class="loader-letter loader-g">G</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <span class="logo-text">
+                    <span class="logo-letter logo-b">B</span>
+                    <span class="logo-letter logo-o">O</span>
+                    <span class="logo-letter logo-t">T</span>
+                    <span class="logo-letter logo-g">G</span>
+                </span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="tours.html" class="nav-link active">Tours</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Upcoming Tours Section -->
+        <section class="tours-section">
+            <h2 class="section-title">Upcoming Tours</h2>
+            <div class="tours-grid" id="upcoming-tours">
+                <div class="tour-card upcoming" data-tour="1">
+                    <div class="tour-image-container">
+                        <img src="Images/1.jpg" alt="Tour 1" class="tour-image">
+                        <div class="tour-overlay">
+                            <p class="tour-description">Join us for an amazing adventure through breathtaking landscapes and unforgettable experiences.</p>
+                        </div>
+                    </div>
+                    <span class="tour-label upcoming-label">Upcoming</span>
+                    <button class="tour-button join-button" onclick="window.location.href='contact.html'">Join Us</button>
+                </div>
+                <div class="tour-card upcoming" data-tour="2">
+                    <div class="tour-image-container">
+                        <img src="Images/2.jpg" alt="Tour 2" class="tour-image">
+                        <div class="tour-overlay">
+                            <p class="tour-description">Explore hidden gems and create memories that will last a lifetime.</p>
+                        </div>
+                    </div>
+                    <span class="tour-label upcoming-label">Upcoming</span>
+                    <button class="tour-button join-button" onclick="window.location.href='contact.html'">Join Us</button>
+                </div>
+                <div class="tour-card upcoming" data-tour="3">
+                    <div class="tour-image-container">
+                        <img src="Images/3.jpg" alt="Tour 3" class="tour-image">
+                        <div class="tour-overlay">
+                            <p class="tour-description">Experience the beauty of nature and the thrill of adventure.</p>
+                        </div>
+                    </div>
+                    <span class="tour-label upcoming-label">Upcoming</span>
+                    <button class="tour-button join-button" onclick="window.location.href='contact.html'">Join Us</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Tours Section -->
+        <section class="tours-section">
+            <h2 class="section-title">Past Tours</h2>
+            <div class="tours-grid" id="past-tours">
+                <div class="tour-card completed" data-tour="4">
+                    <div class="tour-image-container">
+                        <img src="Images/4.jpg" alt="Tour 4" class="tour-image">
+                        <div class="tour-overlay">
+                            <p class="tour-description">A memorable journey filled with stunning views and incredible moments.</p>
+                        </div>
+                    </div>
+                    <span class="tour-label completed-label">Completed</span>
+                    <button class="tour-button watch-button" onclick="window.open('https://youtu.be/Rfp8q3jmTck?si=B8FEmK-KAjY8PJJe', '_blank')">Watch</button>
+                </div>
+                <div class="tour-card completed" data-tour="5">
+                    <div class="tour-image-container">
+                        <img src="Images/5.jpg" alt="Tour 5" class="tour-image">
+                        <div class="tour-overlay">
+                            <p class="tour-description">Discovering new places and cultures with amazing travel companions.</p>
+                        </div>
+                    </div>
+                    <span class="tour-label completed-label">Completed</span>
+                    <button class="tour-button watch-button" onclick="window.open('https://youtu.be/Rfp8q3jmTck?si=B8FEmK-KAjY8PJJe', '_blank')">Watch</button>
+                </div>
+                <div class="tour-card completed" data-tour="6">
+                    <div class="tour-image-container">
+                        <img src="Images/6.jpg" alt="Tour 6" class="tour-image">
+                        <div class="tour-overlay">
+                            <p class="tour-description">An epic adventure that exceeded all expectations.</p>
+                        </div>
+                    </div>
+                    <span class="tour-label completed-label">Completed</span>
+                    <button class="tour-button watch-button" onclick="window.open('https://youtu.be/Rfp8q3jmTck?si=B8FEmK-KAjY8PJJe', '_blank')">Watch</button>
+                </div>
+            </div>
+            <div class="show-more-container">
+                <button class="show-more-btn" id="show-more-btn">Show More</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Brother On The Globe</p>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
